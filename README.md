@@ -171,8 +171,7 @@ grupo_09_kinova_gen3_6dof_ws/
 │       ├── setup.cfg
 │       └── setup.py
 ├── docs/
-│   ├── gen3_6dof.urdf
-│   └── verificar_dh.py
+│   └── capturas/
 ├── dependencias.repos
 ├── instalar.sh
 ├── entorno.sh
