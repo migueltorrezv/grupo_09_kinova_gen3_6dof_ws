@@ -6,6 +6,7 @@ WS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 source /opt/ros/jazzy/setup.bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+export QT_QPA_PLATFORM=xcb
 
 if [ -f "$WS_DIR/install/setup.bash" ]; then
   source "$WS_DIR/install/setup.bash"

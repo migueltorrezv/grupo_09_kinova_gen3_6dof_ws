@@ -190,3 +190,4 @@ grupo_09_kinova_gen3_6dof_ws/
 - **Singularidad:** con todas las articulaciones en cero el brazo está completamente extendido y el Jacobiano pierde rango; por ello la cinemática inversa no parte de `q = 0`.
 - **Objetivos fuera de alcance:** el alcance aproximado del brazo es 0.89 m desde el hombro. Si el objetivo no es alcanzable, `ik_node` informa `NOT CONVERGED` y conserva la postura anterior.
 - **Joint 6:** el efector final se encuentra sobre el eje de joint_6, por lo que esta articulación no modifica la posición; su columna en el Jacobiano posicional es nula.
+- **Wayland (Ubuntu 24.04):** el Joint State Publisher GUI puede no responder al mouse ni al teclado (sliders, Center, Randomize). `entorno.sh` fuerza X11 con `QT_QPA_PLATFORM=xcb`, lo que soluciona el problema.
