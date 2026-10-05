@@ -1,0 +1,15 @@
+# Artefactos de compilacion de ROS 2 (no se versionan)
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editores
+.vscode/
+.idea/
+
+# Dependencia externa del fabricante (se descarga con dependencias.repos)
+src/ros2_kortex/
