@@ -171,6 +171,8 @@ grupo_09_kinova_gen3_6dof_ws/
 │       ├── setup.cfg
 │       └── setup.py
 ├── docs/
+│   ├── figura_frames.pdf
+│   ├── figura_frames.png
 │   └── capturas/
 ├── dependencias.repos
 ├── instalar.sh
