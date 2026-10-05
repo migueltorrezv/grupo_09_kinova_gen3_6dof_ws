@@ -1,0 +1,97 @@
+% Generado por docs/matrices_dh.py  (c_i = cos q_i, s_i = sin q_i, c_23 = cos(q2 - q3), s_23 = sin(q2 - q3))
+
+\begin{equation}
+A_{0}^{1} = \left[\begin{matrix}c_{1} & 0 & s_{1} & 0\\s_{1} & 0 & - c_{1} & 0\\0 & 1 & 0 & d_{1}\\0 & 0 & 0 & 1\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+A_{1}^{2} = \left[\begin{matrix}s_{2} & - c_{2} & 0 & a_{2} s_{2}\\- c_{2} & - s_{2} & 0 & - a_{2} c_{2}\\0 & 0 & -1 & d_{2}\\0 & 0 & 0 & 1\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+A_{2}^{3} = \left[\begin{matrix}s_{3} & 0 & - c_{3} & 0\\- c_{3} & 0 & - s_{3} & 0\\0 & 1 & 0 & d_{3}\\0 & 0 & 0 & 1\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+A_{3}^{4} = \left[\begin{matrix}c_{4} & 0 & - s_{4} & 0\\s_{4} & 0 & c_{4} & 0\\0 & -1 & 0 & d_{4}\\0 & 0 & 0 & 1\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+A_{4}^{5} = \left[\begin{matrix}c_{5} & 0 & s_{5} & 0\\s_{5} & 0 & - c_{5} & 0\\0 & 1 & 0 & d_{5}\\0 & 0 & 0 & 1\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+A_{5}^{6} = \left[\begin{matrix}- c_{6} & - s_{6} & 0 & 0\\- s_{6} & c_{6} & 0 & 0\\0 & 0 & -1 & d_{6}\\0 & 0 & 0 & 1\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+p_x(q) = a_{2} c_{1} s_{2} + c_{1} c_{4} c_{23} d_{6} s_{5} - c_{1} c_{5} d_{6} s_{23} - c_{1} c_{23} d_{5} s_{4} - c_{1} d_{4} s_{23} - c_{4} d_{5} s_{1} + d_{2} s_{1} - d_{3} s_{1} - d_{6} s_{1} s_{4} s_{5}
+\end{equation}
+
+\begin{equation}
+p_y(q) = - a_{2} s_{1} s_{2} - c_{1} c_{4} d_{5} + c_{1} d_{2} - c_{1} d_{3} - c_{1} d_{6} s_{4} s_{5} - c_{4} c_{23} d_{6} s_{1} s_{5} + c_{5} d_{6} s_{1} s_{23} + c_{23} d_{5} s_{1} s_{4} + d_{4} s_{1} s_{23}
+\end{equation}
+
+\begin{equation}
+p_z(q) = a_{2} c_{2} - c_{4} d_{6} s_{5} s_{23} - c_{5} c_{23} d_{6} - c_{23} d_{4} - d_{1} + d_{5} s_{4} s_{23}
+\end{equation}
+
+\begin{equation}
+r_{11} = - c_{1} c_{4} c_{5} c_{6} c_{23} - c_{1} c_{6} s_{5} s_{23} + c_{1} c_{23} s_{4} s_{6} + c_{4} s_{1} s_{6} + c_{5} c_{6} s_{1} s_{4}
+\end{equation}
+
+\begin{equation}
+r_{12} = - c_{1} c_{4} c_{5} c_{23} s_{6} - c_{1} c_{6} c_{23} s_{4} - c_{1} s_{5} s_{6} s_{23} - c_{4} c_{6} s_{1} + c_{5} s_{1} s_{4} s_{6}
+\end{equation}
+
+\begin{equation}
+r_{13} = - c_{1} c_{4} c_{23} s_{5} + c_{1} c_{5} s_{23} + s_{1} s_{4} s_{5}
+\end{equation}
+
+\begin{equation}
+r_{21} = c_{1} c_{4} s_{6} + c_{1} c_{5} c_{6} s_{4} + c_{4} c_{5} c_{6} c_{23} s_{1} + c_{6} s_{1} s_{5} s_{23} - c_{23} s_{1} s_{4} s_{6}
+\end{equation}
+
+\begin{equation}
+r_{22} = - c_{1} c_{4} c_{6} + c_{1} c_{5} s_{4} s_{6} + c_{4} c_{5} c_{23} s_{1} s_{6} + c_{6} c_{23} s_{1} s_{4} + s_{1} s_{5} s_{6} s_{23}
+\end{equation}
+
+\begin{equation}
+r_{23} = c_{1} s_{4} s_{5} + c_{4} c_{23} s_{1} s_{5} - c_{5} s_{1} s_{23}
+\end{equation}
+
+\begin{equation}
+r_{31} = c_{4} c_{5} c_{6} s_{23} - c_{6} c_{23} s_{5} - s_{4} s_{6} s_{23}
+\end{equation}
+
+\begin{equation}
+r_{32} = c_{4} c_{5} s_{6} s_{23} + c_{6} s_{4} s_{23} - c_{23} s_{5} s_{6}
+\end{equation}
+
+\begin{equation}
+r_{33} = c_{4} s_{5} s_{23} + c_{5} c_{23}
+\end{equation}
+
+\begin{equation}
+J_{v1} = \left[\begin{matrix}- a_{2} s_{1} s_{2} - c_{1} c_{4} d_{5} + c_{1} d_{2} - c_{1} d_{3} - c_{1} d_{6} s_{4} s_{5} - c_{4} c_{23} d_{6} s_{1} s_{5} + c_{5} d_{6} s_{1} s_{23} + c_{23} d_{5} s_{1} s_{4} + d_{4} s_{1} s_{23}\\- a_{2} c_{1} s_{2} - c_{1} c_{4} c_{23} d_{6} s_{5} + c_{1} c_{5} d_{6} s_{23} + c_{1} c_{23} d_{5} s_{4} + c_{1} d_{4} s_{23} + c_{4} d_{5} s_{1} - d_{2} s_{1} + d_{3} s_{1} + d_{6} s_{1} s_{4} s_{5}\\0\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+J_{v2} = \left[\begin{matrix}c_{1} \left(a_{2} c_{2} - c_{4} d_{6} s_{5} s_{23} - c_{5} c_{23} d_{6} - c_{23} d_{4} + d_{5} s_{4} s_{23}\right)\\s_{1} \left(- a_{2} c_{2} + c_{4} d_{6} s_{5} s_{23} + c_{5} c_{23} d_{6} + c_{23} d_{4} - d_{5} s_{4} s_{23}\right)\\- a_{2} s_{2} - c_{4} c_{23} d_{6} s_{5} + c_{5} d_{6} s_{23} + c_{23} d_{5} s_{4} + d_{4} s_{23}\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+J_{v3} = \left[\begin{matrix}c_{1} \left(c_{4} d_{6} s_{5} s_{23} + c_{5} c_{23} d_{6} + c_{23} d_{4} - d_{5} s_{4} s_{23}\right)\\s_{1} \left(- c_{4} d_{6} s_{5} s_{23} - c_{5} c_{23} d_{6} - c_{23} d_{4} + d_{5} s_{4} s_{23}\right)\\c_{4} c_{23} d_{6} s_{5} - c_{5} d_{6} s_{23} - c_{23} d_{5} s_{4} - d_{4} s_{23}\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+J_{v4} = \left[\begin{matrix}- c_{1} c_{4} c_{23} d_{5} - c_{1} c_{23} d_{6} s_{4} s_{5} - c_{4} d_{6} s_{1} s_{5} + d_{5} s_{1} s_{4}\\- c_{1} c_{4} d_{6} s_{5} + c_{1} d_{5} s_{4} + c_{4} c_{23} d_{5} s_{1} + c_{23} d_{6} s_{1} s_{4} s_{5}\\s_{23} \left(c_{4} d_{5} + d_{6} s_{4} s_{5}\right)\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+J_{v5} = \left[\begin{matrix}d_{6} \left(c_{1} c_{4} c_{5} c_{23} + c_{1} s_{5} s_{23} - c_{5} s_{1} s_{4}\right)\\- d_{6} \left(c_{1} c_{5} s_{4} + c_{4} c_{5} c_{23} s_{1} + s_{1} s_{5} s_{23}\right)\\d_{6} \left(- c_{4} c_{5} s_{23} + c_{23} s_{5}\right)\end{matrix}\right]
+\end{equation}
+
+\begin{equation}
+J_{v6} = \left[\begin{matrix}0\\0\\0\end{matrix}\right]
+\end{equation}
