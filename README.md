@@ -171,6 +171,7 @@ grupo_09_kinova_gen3_6dof_ws/
 │       ├── setup.cfg
 │       └── setup.py
 ├── docs/
+│   ├── GRUPO_09_KINOVA_GEN3_6DOF_INFORME_PRIMER_PARCIAL.pdf
 │   ├── figura_frames.pdf
 │   ├── figura_frames.png
 │   └── capturas/
